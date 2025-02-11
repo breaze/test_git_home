@@ -18,12 +18,12 @@ public class Demo {
             int medio = inicio + (fin - inicio) / 2;
 
             // Verifica si la clave está en el medio
-            if (arreglo[medio] == clave) {
+            if (arreglo[medio] == valorBuscado) {
                 return medio;
             }
 
             // Si la clave es mayor, ignora la mitad izquierda
-            if (arreglo[medio] < clave) {
+            if (arreglo[medio] < valorBuscado) {
                 inicio = medio + 1;
             } 
             // Si la clave es menor, ignora la mitad derecha
