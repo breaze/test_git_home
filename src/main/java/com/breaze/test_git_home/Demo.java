@@ -11,30 +11,13 @@ package com.breaze.test_git_home;
 public class Demo {
     
     public int buscarNumeroEnArreglo(int[] arreglo, int valorBuscado){
-        System.out.println("hola juan pedro, y mis otros cambios");
-        int inicio = 0;
-        int fin = arreglo.length - 1;
-
-        while (inicio <= fin) {
-            int medio = inicio + (fin - inicio) / 2;
-
-            // Verifica si la clave está en el medio
-            if (arreglo[medio] == valorBuscado) {
-                return medio;
-            }
-
-            // Si la clave es mayor, ignora la mitad izquierda
-            if (arreglo[medio] < valorBuscado) {
-                inicio = medio + 1;
-            } 
-            // Si la clave es menor, ignora la mitad derecha
-            else {
-                fin = medio - 1;
+        System.out.println("hola juan pedro, y mis otros cambios. Generando conflicto");
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] == valorBuscado) {
+                return i; // Devuelve la posición donde se encontró la clave
             }
         }
-
-        // Si no se encontró la clave
-        return -1;
+        return -1; // Si no se encontró
     }
     
 }
