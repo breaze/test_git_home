@@ -11,7 +11,7 @@ package com.breaze.test_git_home;
 public class Demo {
     
     public int buscarNumeroEnArreglo(int[] arreglo, int valorBuscado){
-        System.out.println("hola juan");
+        System.out.println("hola");
         int inicio = 0;
         int fin = arreglo.length - 1;
 
