@@ -11,7 +11,7 @@ package com.breaze.test_git_home;
 public class Demo {
     
     public int buscarNumeroEnArreglo(int[] arreglo, int valorBuscado){
-        System.out.println("hola juan pedro, y mis otros cambios");
+        System.out.println("hola juan pedro, y mis otros cambios. Este es un mensaje y demas codigo");
         int inicio = 0;
         int fin = arreglo.length - 1;
 
@@ -29,7 +29,7 @@ public class Demo {
             } 
             // Si la clave es menor, ignora la mitad derecha
             else {
-                fin = medio - 1;
+                fin = medio - 2;
             }
         }
 
